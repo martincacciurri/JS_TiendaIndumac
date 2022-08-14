@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Indumac</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/aguila-icon.ico">
+    <link rel="stylesheet" href="estilos.css" >
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <!-- Barras navegacion y ayuda -->
+    <section class="sec0">
+        <div class="heros">
+        <!-- <header> -->
+            <div class="hero-mini">
+                <div class="hero-mini-contenedor">
+                    <ul class="hero-mini-ul">
+                        <li>
+                            <span class="nav-ayuda">
+                                <img src="imagenes/sucursal.png" alt="Sitio oficial">
+                                <a class="nav-link" href="#">Sucursal</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="nav-ayuda">
+                                <img src="imagenes/como_comprar.png" alt="Sitio oficial">
+                                <a class="nav-link" href="#">Como comprar</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="nav-ayuda">
+                                <img src="imagenes/venta_telefonica.png" alt="Sitio oficial">
+                                <a class="nav-link" href="#">Venta telefónica</a></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="nav-ayuda">
+                                <img src="imagenes/instagram.png" alt="Instagram">
+                                <a class="nav-link" target="_blank" href="https://www.instagram.com/indumac.com.ar/">¡Seguinos!</a></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="nav-ayuda">
+                                <img src="imagenes/whatsapp.png" alt="WhatsApp">
+                                <a class="nav-link" target="_blank" href="https://walink.co/485c96">Atendemos tu consulta</a></span>
+                            </span>
+                        </li>
+                        <!-- <li> -->
+                            
+                        <!-- </li> -->
+                    </ul>
+                    <ul class="hero-mini-ul">
+                        <li>
+                            <span class="nav-ayuda" id="link-login">
+                                <label class="nav-link">¿Querés ingresar?</label>
+                                <a class="nav-link" href="login.html" style="font-weight: 700; text-decoration:underline;">Login</a>
+                            </span>
+                        </li>
+                    </ul>                        
+                </div>
+            </div>
+            <div class="hero-principal">
+                <div class="hero-principal-contenedor">
+                    <div class="div-logo">
+                        <a href= "index.html" class="logo">
+                        <img src="imagenes/indumac-logo.png" alt="Sitio oficial">
+                        </a>
+                    </div>
+                        <nav class="main-nav">
+                            <ul class="menu" id="menu">
+                                <li class="menu-item container-submenu">
+                                    <a href="#" class="menu-link submenu-btn">
+                                        Marcas
+                                    </a>
+                                    <ul class="submenu">
+                                        <li class="menu-item"><a href="" class="menu-link">BTA</a></li>
+                                        <li class="menu-item"><a href="" class="menu-link">BOSCH</a></li>
+                                        <li class="menu-item"><a href="" class="menu-link">Dowen Pagio</a></li>
+                                        <li class="menu-item"><a href="" class="menu-link">Makita</a></li>
+                                        <li class="menu-item"><a href="" class="menu-link">Milwakee</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item container-submenu">
+                                    <a href="" class="menu-link">Productos
+                                    </a>
+                                    <ul class="submenu">
+                                        <li class="menu-item"><a href="" class="menu-link">Taladro</a></li>
+                                        <li class="menu-item"><a href="" class="menu-link">Cortadora de cesped</a></li>
+                                        <li class="menu-item"><a href="" class="menu-link">Motoguadaña</a></li>
+                                        <li class="menu-item"><a href="" class="menu-link">Escaleras</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item container-submenu">
+                                    <a class="menu-link" href="#servicio_tecnico">Servicio técnico</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div> 
+
+                    <span class="clima">                                
+                        <p id="temperatura"><p/>
+                        <img id="icono-animado" src="" alt="clima">
+                        <p id="ubicacion"></p>
+                    </span>
+
+
+                    <div class="div-compras">
+                        <div class="div-compras-contenedor">
+                            <input id="buscador" name="buscador" class="div-compras-input" type="text" placeholder="Buscar productos...">
+                            <ul id="listaArticulos" class="listaArticulos">
+                                
+                            </ul>
+                            <input class="div-compras-img" type="image" src="imagenes/buscar.svg">
+                        </div>
+                        <div class="div-compras-contenedor">
+                            <!-- <input class="buscar-icon" type="image" src="imagenes/carrito.png"> -->
+                            <a href="carrito.html">
+                                <img class="buscar-icon" src="imagenes/carrito.png" alt="Ir a carrito" >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+
+    <div class="formulario-login">
+        <div class="form-login">
+            <form class="formulario-container" id="formulario">
+                <div class="header-login">
+                    <div>
+                        <img src="imagenes/aguila.png" alt="">  
+                    </div>
+                    <div>
+                        <h1>¡Bienvenido/a!</h1>
+                        <p class="aclaracion" style="padding:20px 45px;">Ingresá para acceder a nuestra lista de precios</p>
+    
+                    </div>
+                </div>
+                <div class="login-inputs">
+                    <div class="input-login">
+                        <p style="font-size: 12px;">Correo electrónico  </p>
+                        <input type="text" id="user" class="input-principal">
+                    </div>
+                    <div class="input-login">
+                        <p style="font-size: 12px;">Contraseña</p>
+                        <input type="password" id="pass" class="input-principal">
+                    </div>
+                    <div class="input-login">
+                        <button class="boton-ingresar" id="btnLogin">Ingresar</button>
+                    </div>
+                </div>            
+            </form>
+        </div>
+        <div class="form-login-img">
+            <img src="imagenes/login-img.png" alt="">
+        </div>       
+    </div>  
+    <script src="login.js"></script>
+</body>
+</html>

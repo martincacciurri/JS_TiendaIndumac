@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Indumac</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/aguila-icon.ico">
+    <link rel="stylesheet" href="estilos.css" >
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+    <!-- Barras navegacion y ayuda -->
+    <section class="sec0">
+        <div class="heros">
+        <!-- <header> -->
+            <div class="hero-mini">
+                <div class="hero-mini-contenedor">
+                    <ul class="hero-mini-ul">
+                        <li>
+                            <span class="nav-ayuda">
+                                <img src="imagenes/sucursal.png" alt="Sitio oficial">
+                                <a class="nav-link" href="#">Sucursal</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="nav-ayuda">
+                                <img src="imagenes/como_comprar.png" alt="Sitio oficial">
+                                <a class="nav-link" href="#">Como comprar</a>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="nav-ayuda">
+                                <img src="imagenes/venta_telefonica.png" alt="Sitio oficial">
+                                <a class="nav-link" href="#">Venta telefónica</a></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="nav-ayuda">
+                                <img src="imagenes/instagram.png" alt="Instagram">
+                                <a class="nav-link" target="_blank" href="https://www.instagram.com/indumac.com.ar/">¡Seguinos!</a></span>
+                            </span>
+                        </li>
+                        <li>
+                            <span class="nav-ayuda">
+                                <img src="imagenes/whatsapp.png" alt="WhatsApp">
+                                <a class="nav-link" target="_blank" href="https://walink.co/485c96">Atendemos tu consulta</a></span>
+                            </span>
+                        </li>
+                        <!-- <li> -->
+                            
+                        <!-- </li> -->
+                    </ul>
+                    <ul class="hero-mini-ul">
+                        <li>
+                            <span class="nav-ayuda" id="link-login">
+                                <label class="nav-link">¿Querés ingresar?</label>
+                                <a class="nav-link" href="login.html" style="font-weight: 700; text-decoration:underline;">Login</a>
+                            </span>
+                        </li>
+                    </ul>                        
+                </div>
+            </div>
+            <div class="hero-principal">
+                <div class="hero-principal-contenedor">
+                    <div class="div-logo">
+                        <a href= "index.html" class="logo">
+                        <img src="imagenes/indumac-logo.png" alt="Sitio oficial">
+                        </a>
+                    </div>
+                        <nav class="main-nav">
+                            <ul class="menu" id="menu">
+                                <li class="menu-item container-submenu">
+                                    <a href="#" class="menu-link submenu-btn">
+                                        Marcas
+                                    </a>
+                                    <ul class="submenu">
+                                        <li class="menu-item"><a href="" class="menu-link">BTA</a></li>
+                                        <li class="menu-item"><a href="" class="menu-link">BOSCH</a></li>
+                                        <li class="menu-item"><a href="" class="menu-link">Dowen Pagio</a></li>
+                                        <li class="menu-item"><a href="" class="menu-link">Makita</a></li>
+                                        <li class="menu-item"><a href="" class="menu-link">Milwakee</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item container-submenu">
+                                    <a href="" class="menu-link">Productos
+                                    </a>
+                                    <ul class="submenu">
+                                        <li class="menu-item"><a href="" class="menu-link">Taladro</a></li>
+                                        <li class="menu-item"><a href="" class="menu-link">Cortadora de cesped</a></li>
+                                        <li class="menu-item"><a href="" class="menu-link">Motoguadaña</a></li>
+                                        <li class="menu-item"><a href="" class="menu-link">Escaleras</a></li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item container-submenu">
+                                    <a class="menu-link" href="#servicio_tecnico">Servicio técnico</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div> 
+
+                    <span class="clima">                                
+                        <p id="temperatura"><p/>
+                        <img id="icono-animado" src="" alt="clima">
+                        <p id="ubicacion"></p>
+                    </span>
+
+
+                    <div class="div-compras">
+                        <div class="div-compras-contenedor">
+                            <input id="buscador" name="buscador" class="div-compras-input" type="text" placeholder="Buscar productos...">
+                            <ul id="listaArticulos" class="listaArticulos">
+                                
+                            </ul>
+                            <input class="div-compras-img" type="image" src="imagenes/buscar.svg">
+                        </div>
+                        <div class="div-compras-contenedor">
+                            <!-- <input class="buscar-icon" type="image" src="imagenes/carrito.png"> -->
+                            <a href="carrito.html">
+                                <img class="buscar-icon" src="imagenes/carrito.png" alt="Ir a carrito" >
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section>
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner-contenido">
+            <h1>¡Bienvenidos a nuestro sitio oficial!</h1>
+            <a class="banner-link" href="#seccion2"> Ver Productos Destacados </a>
+        </div>
+    </section>
+
+    <!-- Metodos de pago, Envio , Retiro en local -->
+    <section class="sec1">
+        <div class="sec1-barra">
+            <div class="metodos-pago">
+                <div>
+                    <img class="tarjetas-icon" src="imagenes/tarjetas.png" alt="metodo de pago">        
+                </div>
+                <div class="metodos-pago-contenedor">
+                    <p>Tarjetas y medios de pago</p>
+                    <a href="https://www.youtube.com">Ver que tipos de tarjetas trabajamos</a>              
+                </div>
+            </div>
+            <div class="metodos-pago">
+                <div>
+                    <img class="envios-icon" src="imagenes/envios.png" alt="metodo de pago">        
+                </div>
+                <div class="metodos-pago-contenedor">
+                    <p>Envios a todo el pais</p>
+                    <a href="costoEnvio.html">Calcular costo de envio</a>              
+                </div>
+            </div>
+            <div class="metodos-pago">
+                <div>
+                    <img class="retiro-icon" src="imagenes/retiro.png" alt="metodo de pago">        
+                </div>
+                <div class="metodos-pago-contenedor">
+                    <p>Retiro en nuestro local</p>
+                    <a href="https://www.youtube.com">¡Conocé el proceso!</a>              
+                </div>
+            </div>
+        </div>
+    </section> 
+
+    <!-- Carrousel de productos -->
+    <section id="seccion2" class="sec2">
+        
+        <div class="swiper-button-prev"></div>
+            <div class="row-container">
+                <div class="section-header">
+                    <h2>Productos destacados</h2>
+                </div>
+                <div class="carousel-container"> 
+                    <div class="container">
+                        <div class="swiper-container mySwiper">        
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img id= "producto-imagen1" src="imagenes/01grande.jpg"  alt="">
+                                    <div class="card-description">
+                                        <div class="card-title">
+                                            <h6 id="precio1-descuento"></h6>
+                                            <h3 id="precio1"></h3>                                    
+                                        </div>
+                                        <div class="card-text">
+                                            <p id="producto1"></p>
+                                        </div>
+                                        <div class="card-link">
+                                            <p style ="display: none;" id="productoID1"></p>
+                                            <a href="producto.html" class="botonComprar">Comprar</a>
+                                        </div>
+                                    </div>
+                
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img id="producto-imagen2" src="imagenes/02grande.jpg" alt="">
+                                    <div class="card-description">
+                                        <div class="card-title">
+                                            <h6 id="precio2-descuento"></h6>
+                                            <h3 id="precio2"></h3>  
+                                        </div>
+                                        <div class="card-text">
+                                            <p id="producto2"></p>
+                                        </div>
+                                        <div class="card-link">
+                                            <p style ="display: none;" id="productoID2"></p>
+                                            <a href="producto.html" class="botonComprar">Comprar</a>
+                                        </div>
+                                </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img id="producto-imagen3" src="imagenes/03grande.jpeg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h6 id="precio3-descuento"></h6>
+                                        <h3 id="precio3"></h3>  
+                                    </div>
+                                    <div class="card-text">
+                                        <p id="producto3"></p>
+                                    </div>
+                                    <div class="card-link">
+                                        <p style ="display: none;" id="productoID3"></p>
+                                        <a href="producto.html" class="botonComprar">Comprar</a>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img id="producto-imagen4" src="imagenes/04.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h6 id="precio4-descuento"></h6>
+                                        <h3 id="precio4"></h3>  
+                                    </div>
+                                    <div class="card-text">
+                                        <p id="producto4"></p>
+                                    </div>
+                                    <div class="card-link">
+                                        <p style ="display: none;" id="productoID4"></p>
+                                        <a href="producto.html" class="botonComprar">Comprar</a>
+                                    </div>
+                                </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img id="producto-imagen5" src="imagenes/05.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h6 id="precio5-descuento"></h6>
+                                        <h3 id="precio5"></h3>  
+                                    </div>
+                                    <div class="card-text">
+                                        <p id="producto5"></p>
+                                    </div>
+                                    <div class="card-link">
+                                        <p style ="display: none;" id="productoID5"></p>
+                                        <a href="producto.html" class="botonComprar">Comprar</a>
+                                    </div>
+                                </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <img id="producto-imagen6" src="imagenes/06.jpg" alt="">
+                                <div class="card-description">
+                                    <div class="card-title">
+                                        <h6 id="precio6-descuento"></h6>
+                                        <h3 id="precio6"></h3>  
+                                    </div>
+                                    <div class="card-text">
+                                        <p id="producto6"></p>
+                                    </div>
+                                    <div class="card-link">
+                                        <p style ="display: none;" id="productoID6"></p>
+                                        <a href="producto.html" class="botonComprar">Comprar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div> 
+                </div>
+            </div>
+        <div class="swiper-button-next"></div>
+    </section> 
+
+    <!-- Imagen que tiene Servicio Tecnico + Datos -->
+    <div id="servicio_tecnico">
+        <img src="imagenes/sec4.jpg" style="width: 100%; height: 100%; transform:scale(1); " alt="">
+    </div> 
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Toasty -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous"></script>
+    <!-- De index-->
+    <script src="index.js"></script>
+</body>
+</html>
+
